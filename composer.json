@@ -1,0 +1,36 @@
+{
+    "name": "splittlogic/pink",
+    "description": "",
+    "keywords": [
+        "splittlogic",
+        "pink"
+    ],
+    "homepage": "https://github.com/splittlogic/pink",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\pink\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\pink\\pinkServiceProvider"
+            ],
+            "aliases": {
+                "pink": "splittlogic\\pink\\Facades\\pink"
+            }
+        }
+    }
+}
